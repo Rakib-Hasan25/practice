@@ -16,9 +16,18 @@ app.get("/", (req, res) => {
  app.get("/rakib", (req, res) => { 
    res.send("Express on Vercelsdfasddfsd");
 }); 
- const PORT = process.env.PORT || 5000; 
- 
+
+ try{
  app.listen(
-    PORT, () => { 
-    console.log(`Server is running on port ${PORT}`);
- });
+   process.env.PORT || 5000, () => { 
+    console.log(`Server is running on port ${process.env.PORT}`);
+ }
+ )
+}
+ catch(error){
+   console.error("Error: " , error)
+   throw err
+}
+
+ 
+  
