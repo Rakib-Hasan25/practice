@@ -16,6 +16,10 @@ app.get("/", (req, res) => {
  app.get("/rakib", (req, res) => { 
    res.send("Express on Vercelsdfasddfsd");
 }); 
+app.get("/raakib", (req, res) => { 
+   res.send("Express on Vercelsdfasddfsdfsdfsdfsadfsadfsadfasdf");
+}); 
+
 
  try{
  app.listen(
